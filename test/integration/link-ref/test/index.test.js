@@ -82,6 +82,9 @@ describe('Invalid hrefs', () => {
     it('should handle child ref that is a function', async () => {
       await noError('/child-ref-func')
     })
+    it('should handle child component with useImperativeHandle', async () => {
+      await noError('/child-imperative-handle')
+    })
   })
 
   describe('production mode', () => {
